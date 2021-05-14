@@ -1,0 +1,40 @@
+#step {
+  .step {
+    &-head {
+      text-align: center;
+      margin-bottom: 80px;
+
+      & * {
+        line-height: 2;
+      }
+    }
+
+    &-content {
+      .flex-items {
+        margin-bottom: 100px;
+
+        div {
+          flex-basis: 50%;
+        }
+
+        .img {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+        }
+
+        .text {
+          text-align: justify;
+        }
+      }
+
+      .flex-reverse {
+        .img {
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+        }
+      }
+    }
+  }
+}

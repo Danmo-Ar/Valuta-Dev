@@ -1,0 +1,26 @@
+@keyframes float {
+  0% {
+    transform: translateY(10px);
+  }
+
+  50% {
+    transform: translateY(30px);
+  }
+
+  0% {
+    transform: translateY(10px);
+  }
+}
+@keyframes float2 {
+  0% {
+    transform: translateY(30px);
+  }
+
+  50% {
+    transform: translateY(70px);
+  }
+
+  0% {
+    transform: translateY(30px);
+  }
+}

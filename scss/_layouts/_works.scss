@@ -1,0 +1,47 @@
+#works {
+  margin-bottom: 50px;
+  background: #eff;
+
+  .works {
+    &-head {
+      text-align: center;
+      padding: 20px;
+      margin-bottom: 30px;
+
+      & * {
+        line-height: 2;
+      }
+
+      h1 {
+        color: $secondary-color;
+      }
+    }
+
+    &-content {
+      .flex-items {
+        display: flex;
+
+        div {
+          padding: 1.7rem;
+          flex-basis: 33.33%;
+          text-align: center;
+
+          img {
+            width: 70px;
+          }
+
+          .lead {
+            font-size: 1rem;
+            margin-bottom: 10px;
+          }
+
+          a {
+            font-size: 0.8rem;
+            color: $main-color;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
