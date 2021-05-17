@@ -300,3 +300,20 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: center; }
+
+#info .section-a {
+  text-align: center; }
+  #info .section-a .f-lead,
+  #info .section-a .lead {
+    line-height: 1.1; }
+  #info .section-a .lead {
+    margin-bottom: 30px; }
+
+#info .section-b .f-lead {
+  text-align: center;
+  margin: 20px 0; }
+
+#submit {
+  text-align: center; }
+  #submit .flex-items {
+    display: flex; }
