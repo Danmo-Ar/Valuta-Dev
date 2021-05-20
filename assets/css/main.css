@@ -461,30 +461,33 @@ body {
 
 @media only screen and (max-width: 500px) {
   #header {
-    height: 110vh; }
+    height: 100vh; }
+  #header .navbar {
+    margin-bottom: 1px; }
   #header .navbar .container {
-    display: flex;
-    flex-direction: column;
     overflow: initial; }
-    #header .navbar .container nav {
-      display: none; }
     #header .navbar .container nav ul {
+      display: none;
       font-size: 0.85rem;
-      margin-bottom: 10px; }
+      margin-bottom: 5px; }
     #header .navbar .container nav ul a {
       padding: 5px; }
+    #header .navbar .container .connect {
+      display: none; }
   #header .header-content .content {
     display: grid;
     grid-template-columns: 1fr; }
     #header .header-content .content div:first-child p {
       font-size: 1.1rem;
-      margin: 20px 0 0 0; }
+      margin: 0;
+      padding: 0 0 5px 0; }
     #header .header-content .content div:first-child .btn-connect {
       width: 230px;
       font-size: 0.8rem;
       margin: 0 0 5px 0; }
     #header .header-content .content div:first-child h1 {
-      font-size: 1.8rem; }
+      font-size: 1.8rem;
+      padding-bottom: 1px; }
     #header .header-content .content div:first-child .form-group {
       display: flex; }
     #header .header-content .content div:first-child .form-group input {
@@ -499,6 +502,7 @@ body {
       #header .header-content .content div:nth-child(2) .phone {
         visibility: hidden; }
       #header .header-content .content div:nth-child(2) .coin1 {
+        right: 20px;
         transform: translateY(50px);
         animation: fl 6s ease-in-out infinite; }
       #header .header-content .content div:nth-child(2) .coin2 {
