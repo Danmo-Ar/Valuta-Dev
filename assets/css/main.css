@@ -416,7 +416,7 @@ body {
 #submit {
   text-align: center;
   padding: 60px 0;
-  margin-bottom: 90px;
+  margin-bottom: 30px;
   background-color: #008ed9;
   color: #fff;
   clip-path: polygon(0 3%, 100% 0%, 100% 93%, 0% 100%); }
