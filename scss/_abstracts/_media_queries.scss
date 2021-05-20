@@ -1,0 +1,108 @@
+@media only screen and (max-width: 500px) {
+  #header {
+    height: 110vh;
+  }
+  #header .navbar .container {
+    display: flex;
+    flex-direction: column;
+    overflow: initial;
+
+    nav {
+      display: none;
+    }
+
+    nav ul {
+      font-size: 0.85rem;
+      margin-bottom: 10px;
+    }
+
+    nav ul a {
+      padding: 5px;
+    }
+  }
+
+  #header .header-content .content {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    div:first-child p {
+      font-size: 1.1rem;
+      margin: 20px 0 0 0;
+    }
+
+    div:first-child .btn-connect {
+      width: 230px;
+      font-size: 0.8rem;
+      margin: 0 0 5px 0;
+    }
+
+    div:first-child h1 {
+      font-size: 1.8rem;
+    }
+    div:first-child .form-group {
+      display: flex;
+    }
+
+    div:first-child .form-group input {
+      padding: 1rem;
+      font-size: 1rem;
+      width: 80%;
+    }
+
+    div:first-child .form-group .btn-submit {
+      font-size: 0.7rem;
+    }
+
+    div:nth-child(2) {
+      position: absolute;
+      z-index: -1;
+
+      .phone {
+        visibility: hidden;
+      }
+
+      .coin1 {
+        transform: translateY(50px);
+        animation: fl 6s ease-in-out infinite;
+      }
+
+      .coin2 {
+        transform: translateY(300px);
+        animation: fl2 7s ease-in-out infinite;
+      }
+    }
+  }
+
+  #works .works-content .flex-items {
+    display: flex;
+    flex-direction: column;
+
+    div {
+      border-right: none;
+      border-bottom: 1px dashed #ddd;
+    }
+  }
+
+  #info .section-a .icon-details {
+    flex-direction: column;
+  }
+
+  #submit .flex-items {
+    flex-direction: column;
+
+    .lead {
+      padding: 10px;
+    }
+  }
+
+  #step .step-content .flex-items {
+    flex-direction: column;
+  }
+
+  .h-lead {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 768px) {
+}

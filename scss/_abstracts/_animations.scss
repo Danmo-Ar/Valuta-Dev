@@ -24,3 +24,33 @@
     transform: translateY(30px);
   }
 }
+
+// mobile
+
+@keyframes fl {
+  0% {
+    transform: translateY(50px);
+  }
+
+  50% {
+    transform: translateY(70px);
+  }
+
+  0% {
+    transform: translateY(50px);
+  }
+}
+
+@keyframes fl2 {
+  0% {
+    transform: translateY(300px);
+  }
+
+  50% {
+    transform: translateY(340px);
+  }
+
+  0% {
+    transform: translateY(300px);
+  }
+}

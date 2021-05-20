@@ -1,0 +1,63 @@
+#submit {
+  text-align: center;
+  padding: 60px 0;
+  margin-bottom: 90px;
+  background-color: $main-color;
+  color: $light-color;
+  clip-path: polygon(0 3%, 100% 0%, 100% 93%, 0% 100%);
+
+  .flex-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .lead {
+      padding: 1.2rem;
+      color: #fff;
+      font-weight: 700;
+    }
+  }
+}
+
+// about
+
+#about {
+  display: flex;
+  justify-content: center;
+
+  .f-lead {
+    font-size: 2rem;
+    padding: 0.5rem 0;
+    border-bottom: 2px dashed $main-color;
+  }
+  .quote {
+    position: relative;
+    padding: 3rem 2rem;
+    background: rgba(105, 226, 220, 0.3);
+    border-radius: 15px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      background: url('../images/submit/quote.svg') no-repeat center
+        center/cover;
+      width: 150px;
+      height: 148px;
+      top: 0;
+      z-index: -1;
+      opacity: 0.2;
+    }
+
+    h2 {
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      color: $dark-color;
+    }
+
+    p {
+      line-height: 2;
+      font-size: 1.1rem;
+    }
+  }
+}

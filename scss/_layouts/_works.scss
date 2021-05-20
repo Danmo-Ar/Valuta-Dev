@@ -25,6 +25,7 @@
           padding: 1.7rem;
           flex-basis: 33.33%;
           text-align: center;
+          border-right: 1px dashed #ddd;
 
           img {
             width: 70px;
@@ -36,9 +37,14 @@
           }
 
           a {
-            font-size: 0.8rem;
+            font-size: 0.95rem;
             color: $main-color;
-            text-decoration: underline;
+            text-decoration: none;
+            transition: 0.2s ease-in-out;
+
+            &:hover {
+              text-decoration: underline;
+            }
           }
         }
       }

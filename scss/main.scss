@@ -1,11 +1,18 @@
-@import '_abstracts/variables';
-@import '_abstracts/utilities';
-@import '_abstracts/animations';
-@import '_reset/default';
 @import '_abstracts/fonts';
+@import '_abstracts/variables';
+@import '_reset/default';
+@import '_abstracts/animations';
+@import '_abstracts/mixims';
+@import '_abstracts/utilities';
 
 //layouts
 
 @import '_layouts/header';
 @import '_layouts/works';
 @import '_layouts/steps';
+@import '_layouts/info';
+@import '_layouts/submit_about';
+
+//responsive
+
+@import '_abstracts/media_queries';

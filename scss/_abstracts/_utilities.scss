@@ -28,10 +28,12 @@
 .f-lead {
   margin-bottom: 20px;
   color: $main-color;
+  font-size: 1.3rem;
 }
 
 .h-lead {
   color: $secondary-color;
+  font-size: 1.7rem;
 }
 
 // Bouton
@@ -98,9 +100,11 @@
 
 //background
 
-// .bg-image {
-//   background-color: #a4508b;
-// }
+.bg-light {
+  background-color: $light-color;
+  color: #69e2dc;
+  margin-top: 15px;
+}
 
 // block
 
@@ -109,7 +113,7 @@
   background-color: #555;
   height: 5px;
   border-radius: 15px;
-  opacity: 0.3;
+  opacity: 0.2;
 }
 
 .bt-line1 {
@@ -119,6 +123,19 @@
 .bt-line2 {
   @extend %bt;
   width: 130px;
+}
+
+.bt-line-full {
+  width: 100%;
+  background: none;
+  border-bottom: 2px dashed #ddd;
+  margin: 60px 0;
+}
+
+.mbt {
+  //margin bottom none for bt line full
+
+  margin-bottom: 2px;
 }
 
 //flex
