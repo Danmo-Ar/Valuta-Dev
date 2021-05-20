@@ -232,8 +232,7 @@ body {
       overflow: initial; }
     #header .header-content .content {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      perspective: 450px; }
+      grid-template-columns: repeat(2, 1fr); }
       #header .header-content .content div:first-child p {
         font-size: 1.2rem;
         color: #fff;
@@ -267,7 +266,6 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100%;
       padding: 1rem;
       position: relative; }
       #header .header-content div:nth-child(2) .phone {
@@ -417,9 +415,11 @@ body {
 
 #submit {
   text-align: center;
-  padding: 50px 0;
+  padding: 60px 0;
+  margin-bottom: 90px;
   background-color: #008ed9;
-  color: #fff; }
+  color: #fff;
+  clip-path: polygon(0 3%, 100% 0%, 100% 93%, 0% 100%); }
   #submit .flex-items {
     display: flex;
     justify-content: center;
@@ -430,6 +430,35 @@ body {
       color: #fff;
       font-weight: 700; }
 
+#about {
+  display: flex;
+  justify-content: center; }
+  #about .f-lead {
+    font-size: 2rem;
+    padding: 0.5rem 0;
+    border-bottom: 2px dashed #008ed9; }
+  #about .quote {
+    position: relative;
+    padding: 3rem 2rem;
+    background: rgba(105, 226, 220, 0.3);
+    border-radius: 15px; }
+    #about .quote::before {
+      content: '';
+      position: absolute;
+      background: url("../images/submit/quote.svg") no-repeat center center/cover;
+      width: 150px;
+      height: 148px;
+      top: 0;
+      z-index: -1;
+      opacity: 0.2; }
+    #about .quote h2 {
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      color: #444; }
+    #about .quote p {
+      line-height: 2;
+      font-size: 1.1rem; }
+
 @media only screen and (max-width: 500px) {
   #header {
     height: 110vh; }
@@ -437,6 +466,8 @@ body {
     display: flex;
     flex-direction: column;
     overflow: initial; }
+    #header .navbar .container nav {
+      display: none; }
     #header .navbar .container nav ul {
       font-size: 0.85rem;
       margin-bottom: 10px; }
@@ -484,10 +515,8 @@ body {
   #submit .flex-items {
     flex-direction: column; }
     #submit .flex-items .lead {
-      padding: 10px; } }
-
-#step .step-content .flex-items {
-  flex-direction: column; }
-
-.h-lead {
-  font-size: 1.4rem; }
+      padding: 10px; }
+  #step .step-content .flex-items {
+    flex-direction: column; }
+  .h-lead {
+    font-size: 1.4rem; } }
