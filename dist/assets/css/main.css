@@ -20,6 +20,7 @@ small {
   line-height: 1.5; }
 
 body {
+  position: relative;
   font-family: 'Poppins', sans-serif;
   background-color: #f4fefd; }
 
@@ -184,6 +185,67 @@ body {
     z-index: 0; }
   #header * {
     z-index: 2; }
+  #header .nav-mobile {
+    position: absolute;
+    z-index: 999;
+    height: 100vh;
+    width: 230px;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(100%);
+    opacity: 0;
+    transition: transform 0.3s ease-in-out, opacity 0.4s ease-in-out; }
+    #header .nav-mobile .close {
+      transform: translateY(-130px);
+      font-size: 2.3rem;
+      cursor: pointer; }
+    #header .nav-mobile nav ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-content: space-between;
+      text-align: center; }
+      #header .nav-mobile nav ul li {
+        margin-bottom: 30px; }
+      #header .nav-mobile nav ul a {
+        padding: 15px;
+        color: #444;
+        text-transform: uppercase;
+        font-weight: bold;
+        position: relative; }
+        #header .nav-mobile nav ul a::before {
+          content: '';
+          position: absolute;
+          width: 100%;
+          height: 3px;
+          background-color: #01d7c2;
+          border-radius: 15px;
+          left: 0;
+          bottom: 0;
+          transform-origin: 100% 0;
+          transform: scaleX(0);
+          transition: transform 0.25s ease-in; }
+        #header .nav-mobile nav ul a:hover::before {
+          transform-origin: 0 0;
+          transform: scale(1); }
+    #header .nav-mobile .connect ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      text-transform: uppercase; }
+      #header .nav-mobile .connect ul li {
+        margin-bottom: 15px; }
+      #header .nav-mobile .connect ul > li a {
+        text-align: center;
+        color: #444; }
   #header .navbar {
     margin-bottom: 2.5rem;
     color: #fff; }
@@ -192,6 +254,9 @@ body {
       justify-content: space-between;
       align-items: center;
       height: 5.6rem; }
+      #header .navbar .container .bars {
+        display: none;
+        cursor: pointer; }
       #header .navbar .container nav ul {
         display: flex;
         text-align: center; }
@@ -416,7 +481,7 @@ body {
 #submit {
   text-align: center;
   padding: 60px 0;
-  margin-bottom: 90px;
+  margin-bottom: 30px;
   background-color: #008ed9;
   color: #fff;
   clip-path: polygon(0 3%, 100% 0%, 100% 93%, 0% 100%); }
@@ -461,30 +526,35 @@ body {
 
 @media only screen and (max-width: 500px) {
   #header {
-    height: 110vh; }
+    height: 100vh; }
+  #header .navbar {
+    margin-bottom: 10px; }
   #header .navbar .container {
-    display: flex;
-    flex-direction: column;
     overflow: initial; }
-    #header .navbar .container nav {
-      display: none; }
+    #header .navbar .container .bars {
+      display: flex; }
     #header .navbar .container nav ul {
+      display: none;
       font-size: 0.85rem;
-      margin-bottom: 10px; }
+      margin-bottom: 5px; }
     #header .navbar .container nav ul a {
       padding: 5px; }
+    #header .navbar .container .connect {
+      display: none; }
   #header .header-content .content {
     display: grid;
     grid-template-columns: 1fr; }
     #header .header-content .content div:first-child p {
       font-size: 1.1rem;
-      margin: 20px 0 0 0; }
+      margin: 0;
+      padding: 0 0 20px 0; }
     #header .header-content .content div:first-child .btn-connect {
       width: 230px;
       font-size: 0.8rem;
       margin: 0 0 5px 0; }
     #header .header-content .content div:first-child h1 {
-      font-size: 1.8rem; }
+      font-size: 1.8rem;
+      padding-bottom: 1px; }
     #header .header-content .content div:first-child .form-group {
       display: flex; }
     #header .header-content .content div:first-child .form-group input {
@@ -499,6 +569,7 @@ body {
       #header .header-content .content div:nth-child(2) .phone {
         visibility: hidden; }
       #header .header-content .content div:nth-child(2) .coin1 {
+        right: 20px;
         transform: translateY(50px);
         animation: fl 6s ease-in-out infinite; }
       #header .header-content .content div:nth-child(2) .coin2 {
